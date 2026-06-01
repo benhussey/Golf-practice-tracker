@@ -1,0 +1,24 @@
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: #f5f3ec;
+  overscroll-behavior-y: none;
+}
+
+/* Respect iPhone safe areas (notch / home indicator) */
+#root {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+input, textarea, button {
+  font-family: inherit;
+}
+
+input[type="date"] {
+  -webkit-appearance: none;
+}
